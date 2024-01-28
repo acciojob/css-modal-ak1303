@@ -14,7 +14,7 @@
     width: 70vw;
 }
 .modal.open{
-	display:none;
+	display:block;
 	top:10%;
 	transform:translateY(50%);
 }
