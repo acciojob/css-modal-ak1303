@@ -6,7 +6,6 @@ var modal = document.querySelector('.modal');
 	}
 
     function closeModal() {
-		modal.classList.remove('open');
         document.body.style.backgroundColor = 'white';
-		model.style.display="none";
+		modal.classList.remove('open');
     }
