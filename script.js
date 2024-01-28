@@ -1,20 +1,17 @@
-var modal = document.querySelector('.modal');
+var modal = document.getElementById('myModal');
 var btn = document.getElementById('openModal');
+var closeBtn = document.getElementsByClassName('close-modal')[0];
 
-function openModal() {
-    modal.classList.add('open');
-    document.body.style.backgroundColor = 'lightgrey';
-    window.addEventListener("click", closeIfClickedOutside);
+btn.onclick = function() {
+  modal.style.display = "block";
 }
 
-function closeModal() {
-    document.body.style.backgroundColor = 'white';
-    modal.classList.remove('open');
-    window.removeEventListener("click", closeIfClickedOutside);
+closeBtn.onclick = function() {
+  modal.style.display = "none";
 }
 
-function closeIfClickedOutside(event) {
-    if (!modal.contains(event.target) && event.target !== btn) {
-        closeModal();
-    }
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }

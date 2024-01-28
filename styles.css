@@ -1,42 +1,33 @@
-/*  your css code here. If applicable */
-*{
-	box-sizing:border-box;
-	margin:0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.modal{
-	display: none;
-	position:fixed;
-	top:-100%;
-    margin:auto;
-    transition: top 0.5s ease-in;
-    background-color: white;
-    padding: 10px;
-    width: 70vw;
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;  
+  background-color:lightgray;
 }
-.modal.open{
-	display:block;
-	top:10%;
-	transform:translateY(50%);
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin:15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
-.modal-header{
-	padding:5px;
-	color:white;
-	background-color:green;
-}
-.modal-content{
-	display:flex;
-	flex-direction:column;
-}
-.close-modal{
-	font-weight:600;
-	font-size:12px;
-	border:none;
-	background-color:inherit;
-}
-.modal-body{
-	display:flex;
-	padding:10px;
-	justify-content:space-between;
-	align-items:center;
-	padding:5px;
+
+/* The Close Button */
+.close-modal {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
